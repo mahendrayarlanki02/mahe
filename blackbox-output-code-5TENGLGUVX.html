@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juicy Pie - Premium Juices & Food</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-lemon"></i>
+                <span>Juicy Pie</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#order" class="nav-link">Order</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Freshly Squeezed</span>
+                    <span class="title-line">Juicy Delights</span>
+                </h1>
+                <p class="hero-subtitle">Premium juices, pizzas, burgers & more. Experience the taste of perfection!</p>
+                <div class="hero-buttons">
+                    <a href="#order" class="btn btn-primary">Order Now</a>
+                    <a href="#menu" class="btn btn-secondary">View Menu</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="juice-glass">
+                    <div class="juice-liquid"></div>
+                    <div class="juice-straw"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Menu</h2>
+                <p class="section-subtitle">Freshly prepared with premium ingredients</p>
+            </div>
+            <div class="menu-categories">
+                <div class="category-card active" data-category="all">
+                    All
+                </div>
+                <div class="category-card" data-category="juices">Juices</div>
+                <div class="category-card" data-category="pizza">Pizza</div>
+                <div class="category-card" data-category="burger">Burger</div>
+                <div class="category-card" data-category="sandwich">Sandwich</div>
+                <div class="category-card" data-category="mocktails">Mocktails</div>
+                <div class="category-card" data-category="shakes">Shakes</div>
+            </div>
+            <div class="menu-grid">
+                <!-- Juices -->
+                <div class="menu-card juices" data-category="juices">
+                    <div class="card-image">
+                        <i class="fas fa-lemon"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Fresh Watermelon Juice</h3>
+                        <p>₹99</p>
+                        <div class="card-footer">
+                            <span>Refreshing & hydrating</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-card juices" data-category="juices">
+                    <div class="card-image">
+                        <i class="fas fa-apple-alt"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Apple Ginger Blast</h3>
+                        <p>₹89</p>
+                        <div class="card-footer">
+                            <span>Immunity booster</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pizza -->
+                <div class="menu-card pizza" data-category="pizza">
+                    <div class="card-image">
+                        <i class="fas fa-pizza-slice"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Margherita Pizza</h3>
+                        <p>₹199</p>
+                        <div class="card-footer">
+                            <span>Classic Italian</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Burger -->
+                <div class="menu-card burger" data-category="burger">
+                    <div class="card-image">
+                        <i class="fas fa-hamburger"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Juicy Cheese Burger</h3>
+                        <p>₹179</p>
+                        <div class="card-footer">
+                            <span>Double patty delight</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sandwich -->
+                <div class="menu-card sandwich" data-category="sandwich">
+                    <div class="card-image">
+                        <i class="fas fa-bread-slice"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Grilled Veggie Sandwich</h3>
+                        <p>₹129</p>
+                        <div class="card-footer">
+                            <span>Healthy & tasty</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mocktails -->
+                <div class="menu-card mocktails" data-category="mocktails">
+                    <div class="card-image">
+                        <i class="fas fa-cocktail"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Virgin Mojito</h3>
+                        <p>₹149</p>
+                        <div class="card-footer">
+                            <span>Refreshing mocktail</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Shakes -->
+                <div class="menu-card shakes" data-category="shakes">
+                    <div class="card-image">
+                        <i class="fas fa-ice-cream"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Chocolate Shake</h3>
+                        <p>₹159</p>
+                        <div class="card-footer">
+                            <span>Creamy & delicious</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order" class="order-section">
+        <div class="container">
+            <div class="order-content">
+                <div class="order-text">
+                    <h2>Order Online Now</h2>
+                    <p>Fast delivery at your doorstep</p>
+                </div>
+                <div class="order-buttons">
+                    <a href="https://www.zomato.com/visakhapatnam/mahas-tasty-bites-madhurawada-vizag" target="_blank" class="order-btn zomato">
+                        <i class="fab fa-zomato"></i>
+                        Order on Zomato
+                    </a>
+                    <a href="https://www.swiggy.com/city/vizag/mahas-tasty-bites-ratnagiri-housing-board-colony-pm-palem-rest994122" target="_blank" class="order-btn swiggy">
+                        <i class="fab fa-swiggy"></i>
+                        Order on Swiggy
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>We're here to serve you</p>
+            </div>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Call Us</h3>
+                        <a href="tel:9553934463" class="phone-link">9553934463</a>
+                        <a href="tel:8555822741" class="phone-link">8555822741</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="map-title">Visit Us</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.614228665614!2d83.3457794!3d17.8043993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37e4b8b8b8b8b8%3A0x8b8b8b8b8b8b8b8b!2sJuicy%20Pie!5e0!3m2!1sen!2sin!4v1699999999999" 
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-lemon"></i>
+                    <span>Juicy Pie</span>
+                </div>
+                <p>&copy; 2024 Juicy Pie. All rights reserved. Freshness Guaranteed!</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
